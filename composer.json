@@ -1,6 +1,21 @@
 {
+    "name": "mayo/geoslim",
+    "description": "A Slim PHP framework API wrapper around the Geonames database.",
+    "authors": [
+        {
+            "name": "Reid Mayo",
+            "email": "reidmayo@gmail.com",
+            "homepage": "http://reidmayo.com",
+            "role": "developer"
+        }
+    ],
     "require": {
         "slim/slim": "*",
         "illuminate/database": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "app/models"
+        ]
     }
 }

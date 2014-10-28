@@ -70,10 +70,10 @@ ln -s $VAGRANT_DATA_DIR/apache/mod_rewrite_rules.conf /etc/httpd/conf.d/mod_rewr
 
 # Download geonames data and import into mysql
 cd /vagrant/geoname-import/
-#sh geonames_importer.sh -a download-data
+sh geonames_importer.sh -a download-data
 sh geonames_importer.sh -a create-db -u root -p root
-#sh geonames_importer.sh -a import-dumps -u root -p root
-mysql -u root -proot --local-infile=1 geoname < geonames_import_example_data.sql
+sh geonames_importer.sh -a import-dumps -u root -p root
+#mysql -u root -proot --local-infile=1 geoname < geonames_import_example_data.sql
 
 # Restart services
 service httpd restart

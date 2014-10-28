@@ -1,4 +1,4 @@
-LOAD DATA INFILE 'upper-arlington-records.csv' INTO TABLE geoname
+LOAD DATA LOCAL INFILE 'upper-arlington-records.csv' INTO TABLE geoname
 FIELDS TERMINATED BY ',' ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n'
 IGNORE 1 LINES;
