@@ -45,6 +45,10 @@ pecl install Xdebug
 # Install xdebug.ini file.
 ln -s $VAGRANT_DATA_DIR/php/xdebug.ini /etc/php.d/xdebug.ini
 
+# Install OpCache
+yum install -y php-opcache
+ln -s $VAGRANT_DATA_DIR/php/opcache.ini /etc/php.d/opcache.ini
+
 # Install configured php.ini
 cp /etc/php.ini /etc/php.ini.orig
 rm -f /etc/php.ini
