@@ -42,8 +42,8 @@ $app->get('/', function () {
     echo "<h1>Welcome to GeoSlim!</h1>";
     echo '<p>GeoSlim is a Slim PHP framework API wrapper around the <a href="http://www.geonames.org/">GeoNames</a> locations database.</p>';
     echo '<p>The Eloquent ORM system is used to make database interaction easy.</p>';
-    echo '<p><a href="http://geoslim.local/api/primary/4526992">Primary lookup request</a></p>';
-    echo '<p><a href="http://geoslim.local/api/geoname/US/OH/upper+arlington">Search request</a></p>';
+    echo '<p><a href="http://'.$_SERVER['SERVER_NAME'].'/api/primary/4526992">Primary lookup request</a></p>';
+    echo '<p><a href="http://'.$_SERVER['SERVER_NAME'].'/api/geoname/US/OH/upper+arlington">Search request</a></p>';
     echo '<p>For benchmarking information visit <a href="http://reidmayo.com/2014/10/25/benchmarking-phalcon-php-vs-slim-framework-with-opcache-vs-node-js/">Reidmayo.com</a>.</p>';
 });
 
